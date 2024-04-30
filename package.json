@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "resume",
   "private": true,
   "description": "",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "duckonedev@gmail.com",
   "dependencies": {
     "gatsby": "^5.13.3",
     "gatsby-plugin-image": "^3.13.1",
@@ -39,6 +39,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "deploy": "ph-pages -d build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
