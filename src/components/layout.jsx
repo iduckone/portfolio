@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
 import './layout.css';
+import GlobalStyles from './GlobalStyles';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,7 +25,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      {/* <GlobalStyles /> */}
+      <Header />
       <div
         style={{
           margin: `0 auto`,
@@ -32,16 +34,13 @@ const Layout = ({ children }) => {
           padding: `var(--size-gutter)`,
         }}
       >
-        
         <main>{children}</main>
         <footer
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
           }}
-        >
-
-        </footer>
+        ></footer>
       </div>
     </>
   );
